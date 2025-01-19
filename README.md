@@ -1,6 +1,13 @@
 # CAD-CAM_Research
 
 
+# Run_Chart
+
+```
+dot -Tpng Chart.dot -o Chart.png
+```
+
+
 
 **QCAD**
 
@@ -61,6 +68,18 @@ QCAD v3.0.9.0 Starting from v3.x, ECMA Script interface is used
 
 
 
+
+**Open CASCADE**
+
+```
+Open CASCADE Technology (OCCT) is an open-source software development platform for 3D CAD, CAM, CAE. 
+
+
+https://dev.opencascade.org/release
+
+https://github.com/Open-Cascade-SAS/OCCT
+
+```
 
 
 

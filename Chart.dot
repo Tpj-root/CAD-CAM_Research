@@ -1,0 +1,48 @@
+//dot -Tpng Chart.dot -o Chart.png
+// convert Chart.png   -bordercolor aqua -border 10x10   -bordercolor pink -border 10x10   -bordercolor cyan -border 10x10   Chart.png
+digraph FamilyTree {
+    // Graph settings
+    // Add bg colur
+    graph [label="CAD/CAM",
+        fontsize=80, 
+        fontcolor=green, 
+        labelloc="top",
+        splines=line, rankdir=TB, bgcolor=aquamarine4];
+        // make transparent
+        //splines=line, rankdir=TB, bgcolor=transparent];
+    node [shape=box];
+        // Set default edge style
+    edge [style=dashed, color=blueviolet, penwidth=3];
+
+
+    cad_cam [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+        <TR><TD><IMG SRC="logo/cad_cam_128x128.png" SCALE="TRUE"/></TD></TR>
+        <TR><TD>CAD/CAM</TD></TR>
+    </TABLE>>];
+
+
+
+    qcad [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+        <TR><TD><IMG SRC="logo/qcad_128x128.png" SCALE="TRUE"/></TD></TR>
+        <TR><TD>QCAD</TD></TR>
+    </TABLE>>];
+
+
+    OPENCASCADE [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0">
+        <TR><TD><IMG SRC="logo/opencascade_128x128.png" SCALE="TRUE"/></TD></TR>
+        <TR><TD>opencascade</TD></TR>
+        <TR><TD>OCCT</TD></TR>
+    </TABLE>>];
+
+
+    //qcad_joint [label="", width=0.1, height=0.1, shape=point];
+
+    cad_cam -> qcad [label=""];
+
+
+
+    {rank=cad_cam;}
+    {rank=qcad;}
+
+}
+
