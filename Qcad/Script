@@ -1,0 +1,64 @@
+qcad的dxf读取在\src\io\dxf\RDxfImporter.cpp
+void RDxfImporter::endEntity()
+{
+    QSharedPointer<RSplineEntity> entity(new RSplineEntity(document, RSplineData(spline)));
+    importEntity(entity);
+}
+ 
+qcad的样条曲线的绘图在/src/core/RPainterPath.cpp
+void RPainterPath::addSpline(const RSpline& spline) {
+    int degree = spline.getDegree();
+    if (degree<=3) {
+        moveTo(spline.getStartPoint());
+    }
+ 
+    QList<RSpline> list = spline.getBezierSegments();
+ 
+    for (int i=0; i<list.count(); i++) {
+        QList<RVector> cps = list[i].getControlPoints();
+        // very rare splines of degree >= 4:
+        if ((cps.size()>=5 && degree==cps.size()-1)) {
+            QList<QSharedPointer<RShape> > segments = spline.getExploded(16);
+            for (int k=0; k<segments.length(); k++) {
+                QSharedPointer<RLine> l = segments[k].dynamicCast<RLine>();
+                if (k==0) {
+                    moveTo(l->getStartPoint());
+                }
+                lineTo(l->getEndPoint());
+            }
+        }
+        else if (cps.size()==4 && degree==3) {
+            cubicTo(cps[1], cps[2], cps[3]);
+        }
+        else if (cps.size()==3 && degree==2) {
+            quadTo(cps[1], cps[2]);
+        }
+        else if (cps.size()==2 && degree==1) {
+            lineTo(cps[1]);
+        }
+        else {
+            qWarning() << "RPainterPath::addSpline: invalid bezier segment: " << list[i];
+            continue;
+        }
+    }
+}
+ 
+//\src\core\RPainterPath.h
+void quadTo(qreal ctrlPtx, qreal ctrlPty, qreal endPtx, qreal endPty) {
+    QPainterPath::quadTo(ctrlPtx, ctrlPty, endPtx, endPty);
+}
+ 
+void cubicTo(qreal ctrlPt1x, qreal ctrlPt1y, qreal ctrlPt2x, qreal ctrlPt2y, qreal endPtx, qreal endPty) {
+    QPainterPath::cubicTo(ctrlPt1x, ctrlPt1y, ctrlPt2x, ctrlPt2y, endPtx, endPty);
+}
+ 
+//QPainterPath源码来自Qt官方\Qt\Qt5.12.7\5.12.7\Src\qtbase\src\gui\painting
+ 
+//cubicTo和quadTo都是用来实现贝塞尔曲线的，那有什么不一样呢？
+官方是这么说的：
+Same as cubicTo, but the coordinates are considered relative to the current point on this contour.
+说白了，就是多了一个控制点而已。
+//https://doc.qt.io/qt-5/qpainterpath.html
+//https://qtdebug.com/qt-smooth-curve/
+
+
