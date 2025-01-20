@@ -1,0 +1,477 @@
+开源项目推荐：CNC+CRC/SoftPLC/OpenCASCADE/CAD/CAM（一）
+2021-11-15 1521
+版权
+简介： 开源项目推荐：CNC+CRC/SoftPLC/OpenCASCADE/CAD/CAM
+
+尊重作者，支持原创，如需转载，请附上原地址：
+
+
+https://blog.csdn.net/libaineu2004/article/details/89053246
+
+
+先来看看B站的视频
+
+
+https://www.bilibili.com/video/BV1Bt4y1y74P
+
+
+CRC/CNC
+
+
+Cutter Radius Compensation for Milling machines.
+
+cutter radius compensation
+
+cutter comp
+
+https://github.com/shooter64738/CRC
+
+https://github.com/grbl -- rs274/ngc parser,不支持G40/G41/G42
+
+https://github.com/synthetos/g2
+
+https://github.com/modmaker/BeBoPr
+
+
+http://gerbv.geda-project.org/
+
+
+https://github.com/eduard-x/cnc-qt
+
+
+https://github.com/vlachoudis/bCNC
+
+
+https://github.com/Smoothieware/Smoothieware ++ http://smoothieware.org/
+
+
+https://github.com/OpenBuilds
+
+
+https://github.com/winder/Universal-G-Code-Sender
+
+
+https://github.com/arkypita/LaserGRBL
+
+
+https://github.com/svenhb/GRBL-Plotter
+
+
+https://github.com/cncjs/cncjs
+
+
+LinuxCNC
+
+
+http://www.linuxcnc.org/ -- Supports rigid tapping, cutter compensation, and many other advanced control features.
+
+https://github.com/LinuxCNC/linuxcnc
+
+
+https://github.com/LinuxCNC/linuxcnc/tree/master/src/emc
+
+https://github.com/LinuxCNC/linuxcnc/blob/master/src/emc/rs274ngc/interp_convert.cc -- 刀具补偿
+
+https://github.com/LinuxCNC/simple-gcode-generators
+
+
+http://linuxcnc.org/dists/lucid/emc2.4/ linuxcnc老版本名称叫EMC2，Enhanced Machine Controller (EMC2)
+
+
+Open CASCADE Technology（简称OCCT）
+
+
+opengl是基础图形库，open cascade是一个高级的CAD开发库，OCC基础就是OpenGL。
+
+
+https://www.opencascade.com/ 官网
+
+
+https://www.opencascade.com/content/download-center 下载中心
+
+
+https://www.opencascade.com/content/latest-release  最新版本下载，只提供x64版本的库，不提供x86
+
+
+https://www.opencascade.com/content/previous-releases  历史版本下载
+
+
+https://www.opencascade.com/content/3rd-party-components 第三方依赖库，其中Freetype和Tcl/Tk是必须的
+
+
+https://dev.opencascade.org/ 开发者平台
+
+
+https://dev.opencascade.org/doc/overview/html/index.html 开发文档
+
+
+https://dev.opencascade.org/doc/overview/html/occt_dev_guides__building.html 环境搭建
+
+
+https://github.com/topics/opencascade github相关
+
+
+重量级应用：
+
+
+1、FreeCAD是一个基于OpenCASCADE的开源CAD/CAE工具。 OpenCASCADE是一套开源的CAD/CAM/CAE几何模型核心，来自法国Matra Datavision公司，是著名的CAD软件EUCLID的开发平台。
+
+
+https://github.com/FreeCAD/FreeCAD
+
+
+https://github.com/FreeCAD/FreeCAD/blob/master/src/Mod/Import/App/ImpExpDxf.cpp Dxf文件解析
+
+
+https://www.freecadweb.org/
+
+
+https://www.freecadweb.org/wiki/CompileOnWindows 源码编译说明
+
+
+https://github.com/FreeCAD/FreeCAD-ports-cache/releases 依赖库官方发布
+
+
+https://github.com/apeltauer/FreeCAD/releases 依赖库非官方纯私人发布，版本比较新
+
+
+https://github.com/FreeCAD/FreeCAD_Conda 依赖库新方式
+
+
+2、heekscad
+
+
+HeekCAD是一个免费，开源CAD应用程序，作者是Dan Heeks，danheeks@gmail.com
+
+
+https://www.opencascade.com/content/heekscad
+
+
+https://github.com/Heeks/heekscad
+
+
+https://github.com/Heeks/heekscad/blob/master/src/HDxf.cpp Dxf文件解析
+
+
+https://github.com/Heeks/heekscnc
+
+
+https://github.com/danheeks/dxfconv dxf文件读写
+
+
+https://github.com/danheeks/HeeksCAM
+
+
+https://github.com/danheeks/PyCAD
+
+
+https://github.com/danheeks/PyCAM
+
+
+https://code.google.com/archive/p/heekscad/downloads
+
+
+https://code.google.com/archive/p/heekscnc/downloads
+
+
+https://sites.google.com/site/heekscad/
+
+
+3、PythonOCC
+
+
+Python wrapper for Open CASCADE Technology.
+
+
+http://www.pythonocc.org/
+
+
+4、cadquery
+
+
+CadQuery2.0是pythonocc的高级封装库，使用了Qt语言作为界面语言，是一款正在起步的命令行建模软件，由于pythonocc的使命在于封装opencascade而非关注界面，那么对于有界面需求的开发人员，便可以好好关注一下cadquery。
+
+
+https://github.com/CadQuery/cadquery
+
+
+5、OpenShapefactory
+
+
+OpenShapefactory is a Qt-based Geometry Factory that provides a single-point of entry to the most of OCCT geometrical operations.It is a Middle-Man between you, OpenCascade and QT, it serves as a Geometry Factory wrapping OpenCascade, and providing a single-point of entry to the creation of most geometrical operations.
+
+
+http://code.google.com/p/openshapefactory
+
+
+6、declaracad
+
+
+https://github.com/codelv/declaracad
+
+
+7、mayo
+
+
+https://github.com/fougue/mayo -- 3D viewer based on OpenCascade，Support of STEP/IGES assemblies (colors and tree structure)
+
+
+https://github.com/cbernardo/libIGES -- IGES解析
+
+
+编译源码之前，需要在mayo源工程的opencascade.pri文件手动添加OpenCascade路径：
+
+
+# Declare pure QMake variables out of OCC envvars
+
+COMMON_PATH = "D:/My Resources/OpenCASCADE-7.5.0-vc14-64/opencascade-7.5.0"#注意斜杆的方向;引号;
+
+CASCADE_INC_DIR = $${COMMON_PATH}/inc
+
+CASCADE_LIB_DIR = $${COMMON_PATH}/win64/vc14/lib
+
+CASCADE_BIN_DIR = $${COMMON_PATH}/win64/vc14/bin
+
+CASCADE_SRC_DIR = $${COMMON_PATH}/src
+
+
+8、eryar
+https://github.com/eryar/occQt Qt demo
+http://www.cppblog.com/eryar/ OCCT精品博客，eryar@163.com
+https://www.cnblogs.com/opencascade/ 同上
+x、其他相关的博客和轻量级应用：
+https://github.com/miho/OCC-CSG -- Simple but powerful CSG tool based on OpenCascade
+https://github.com/lvk88/OccTutorial
+https://github.com/tpaviot/oce OCE，在OCC基础上扩展
+https://github.com/tianxiao/occsamplemfc MFC demo
+http://www.zyh1690.org/cadcg/ 博客
+https://blog.csdn.net/augusdi/article/category/695059 博客
+
+
+
+
+
+-----------------
+
+
+https://developer.aliyun.com/article/804049
+
+开源项目推荐：CNC+CRC/SoftPLC/OpenCASCADE/CAD/CAM（二）
+
+
+
+
+CAD
+1、QCAD
+https://www.qcad.org/en/
+https://github.com/qcad/qcad
+https://qcad.org/en/90-dxflib -- dxflib主页，配套开源库
+https://github.com/mcneel/opennurbs -- 配套开源库
+https://www.ribbonsoft.com/doc/qcad/latest/developer/
+https://www.ribbonsoft.com/doc/qcad/2.2/reference/zh_CN/
+最早的版本v2.0.5：https://sourceforge.net/projects/qcadbin-win/
+QCAD v2.2.2.1 最后一个v2.x系列的版本
+QCAD v3.0.9.0 从v3.x开始使用ECMA Script interface
+
+
+
+2、LibreCAD
+LibreCAD 是一款开源免费的 2D CAD 制图软件，原名为 CADuntu 。它是基于社区版本 QCad 构建，并利用 Qt4 进行了重构，原生支持 Mac OSX, Windows 和 Linux 。它提供了基于 GPL 协议的读取/修改/创建 CAD 文件 (.dxf ) 方案。
+LibreCAD最早源自QCad的老版本，v2.0.5，using mingw-5.1.4 and qt-3.3.x-p8.
+https://librecad.org/
+https://github.com/LibreCAD
+https://sourceforge.net/projects/librecad/
+LibreCAD v1.0.4 最后一个v1.x系列的版本
+LibreCAD v2.0.0alpha2 开始使用c++ boost库
+3、KiCAD EDA
+A Cross Platform and Open Source Electronics Design Automation Suite
+https://www.kicad-pcb.org/
+https://gitlab.com/kicad/code/kicad ++ https://www.wxwidgets.org/ 界面不是用Qt写的，而是wxWidgets
+https://github.com/KiCad/kicad-source-mirror
+https://gitlab.com/kicad/code/kicad/-/tree/master/thirdparty/tinyspline_lib 改版的tinyspline，可以和QCAD的dxflib配套
+https://github.com/msteinbeck/tinyspline 原版的tinyspline
+https://gitlab.com/kicad/code/kicad/-/tree/master/thirdparty/dxflib_qcad 改版的dxflib
+https://qcad.org/en/90-dxflib 原版的dxflib
+请重点关注https://gitlab.com/kicad/code/kicad/-/blob/master/pcbnew/import_gfx/dxf_import_plugin.cpp，它用dxflib库解析dxf文件
+
+
+
+
+4、BRL-CAD
+ BRL-CAD 是一个构造实体几何(CSG) 实体模型计算机辅助设计(CAD) 系统。
+https://sourceforge.net/projects/brlcad/
+https://brlcad.org
+5、openscad
+https://github.com/openscad/openscad
+http://www.openscad.org/ OpenSCAD是一个创建立体3D CAD物体的得力软件
+6、RapCAD
+https://github.com/GilesBathgate/RapCAD
+7、AnyCAD 国产软件
+http://www.anycad.net/
+https://github.com/anycad
+8、Vero WorkNC
+CNC刀路设计软件。WorkNC是vero worknc系列软件的新版本，软件具有多种自动刀具路径类型，可以满足用户的各种需求，包括粗加工、精加工、优化加工、清根加工、外形轮廓加工、曲线加工及钻孔等，可以实现全局粗加工刀具路径通过允许微小刀柄近似来访问更难的区域。
+9、Coin3D
+https://bitbucket.org/Coin3D/coin/wiki/Home
+10、某位大牛的作品
+https://www.cnblogs.com/ucancad/
+11、NaroCAD
+NaroCAD is a fully fledged and extensible 3D parametric modeling CAD application. It is based on OpenCascade.
+http://narocad.com/
+https://github.com/mikowiec/rhiocad
+
+
+
+
+12、JCAE
+JAVA based environment for CAE applications.
+http://jcae.sourceforge.net/
+13、gCAD3D
+http://www.gcad3d.org/
+14、boardcad
+http://www.boardcad.com/
+15、solvespace
+http://solvespace.com/index.pl
+
+
+
+16、DraftSight 不开源
+https://www.3ds.com/products-services/draftsight-cad-software/
+17、CAD from a parallel universe
+https://github.com/mkeeter/antimony
+x、大全集合
+https://github.com/mrkaban/Lpro/wiki/%D0%A1%D0%90%D0%9F%D0%A0
+http://www.anderswallin.net/open-source-software/
+https://sourceforge.net/directory/science-engineering/mechcivileng/caddcam/os:windows/ 可以搜索到很多开源项目
+CAM
+CNC Master
+https://sourceforge.net/projects/cncmaster/
+Techne (R) CAD/CAM
+https://sourceforge.net/projects/technecadcam/ 2.5D CAD CAM emphasis on CAM and toolpaths
+https://camotics.org/ ++ https://github.com/CauldronDevelopmentLLC/CAMotics
+https://github.com/aewallin
+https://github.com/aewallin/openvoronoi OpenVoronoi for 2D toolpaths
+https://github.com/aewallin/opencamlib OpenCAMLib for 3D toolpaths
+http://www.anderswallin.net/CAM/ 文章
+http://www.anderswallin.net/open-source-software/ 文章
+https://github.com/OpenBuilds/OpenBuilds-CAM  Online CNC CAM System,JavaScript
+
+
+
+
+
+
+Monocam
+DXF2GCODE
+dxf2gcode is a tool for converting 2D (dxf, pdf, ps) drawings to CNC machine compatible GCode.
+https://sourceforge.net/projects/dxf2gcode/ 与EMC2集成/G0通过路径优化减少移动/通过Line and Arc's改进了样条线导入的精度
+https://github.com/pcb2gcode pcb2gcode最短路径
+https://sourceforge.net/projects/dxf2gcode/ dxf2gcode: converting 2D dxf drawings to CNC machine compatible G-Code
+注册表 HKEY_CURRENT_USER\Software\dxf2gcode
+配置文件 C:\Users\<用户名>\.config\dxf2gcode
+
+
+
+
+PyCharm python3.7+PyQt5.0学习开源代码dxf2gcode
+PCB Milling/CAM
+
+
+嘉立创EDA
+https://lceda.cn/
+https://lceda.cn/editor
+PCBMilling
+https://wiki.base48.cz/PCBMilling
+https://reprap.org/wiki/PCB_Milling
+http://solvespace.com/index.pl CRC
+https://github.com/solvespace/solvespace Solvespace is open source and claims to export tool paths as gcode with cutter radius compensation
+https://github.com/malichao/GerberCAM
+https://github.com/SmartMachines/OpenCAM -- Qt
+
+
+
+
+FlatCAM
+是免费和开源的 PCB CAM，采用 Python + PyQt编写，在大多数平台上稳定运行。FlatCAM 是一种为在数控雕刻机上制造 pcb 的数控工作的程序。它将您的 PCB 工程项目生成的 Gerber 文件，转换成数控雕刻机通用的 G-Code 代码。
+http://flatcam.org/ -- 2D Computer-Aided PCB Manufacturing
+https://bitbucket.org/jpcgt/flatcam
+http://flatcam.org/manual/objectreference.html#paint-area 刀补算法使用的是shapely，它是计算几何库GEOS的Python包。
+https://bitbucket.org/jpcgt/flatcam/src/master/ 稳定版源码下载
+https://bitbucket.org/jpcgt/flatcam/src/Beta/ 最新版beta源码下载
+https://bitbucket.org/jpcgt/flatcam/downloads/ 安装程序下载
+
+
+
+Clipper计算机图形库，刀补
+https://libaineu2004.blog.csdn.net/article/details/103525859
+https://github.com/LibrePCB/LibrePCB
+Candle 蜡烛
+https://github.com/Denvi/Candle -- GRBL controller application with G-Code visualizer written in Qt
+Candle的文件解析GcodeParser.cpp来源自Will Winder编写的“ Universal GcodeSender”开源项目。此文件最初是从“ GcodeViewParse.java”类移植的。而Universal-G-Code-Sender又是基于grbl的java版本。
+grbl：使用优化的C语言编写的开源，嵌入式，高性能g代码解析器和CNC铣削控制器，将在直接的Arduino上运行。
+https://github.com/gnea/grbl
+https://github.com/grbl/grbl/wiki
+http://bengler.no/grbl
+
+
+
+
+
+https://github.com/winder/Universal-G-Code-Sender
+https://github.com/winder/Universal-G-Code-Sender/tree/master/test_files 提供了测试用的*.nc文件
+https://github.com/synthetos/TinyG
+https://github.com/synthetos/g2
+http://smoothieware.org/ ++ https://github.com/Smoothieware/Smoothieware
+
+
+Cura
+https://github.com/Ultimaker/Cura -- 3D printer / slicing GUI built on top of the Uranium framework
+https://github.com/Ultimaker/CuraEngine
+
+
+
+开源的仿真软件HOPSAN
+Hopsan是一个免费的开源多域系统仿真工具，由林平大学流体与机电系统系开发。
+https://github.com/Hopsan/hopsan
+
+
+
+
+SoftPLC, IEC 61131-3
+按照工业控制领域常用的IEC61131-3标准来看，工业控制领域程序语言被分为了两大类五种语言，两大类是指图形化编程和代码编程，图形化编程中有Ladder（梯形图），FBD（Function Block Diagram，功能块图）和SFC（Sequential Function Chart，序列功能表），而代码编程有IL（Instruction List，指令集）和ST（Structured Text，结构化文本）。
+几个著名的开源项目：
+PLCEdit：完全按照IEC61131标准开发，所有五种语言均支持，使用Python开发，故可以做到跨平台。
+Beremiz：一套完整的开源PLC解决方案，不过放在这里主要是因为它不但使用了上面说的PLCEdit，同时还对其进行了增强，使得其增加了重要的在线调试功能。推荐！！！
+SoapBox Snap：使用C#+WPF开发的，仅支持梯形图一种语言，不过却已经支持了在线调试功能，含模拟器。
+LDmicro: Ladder Logic for PIC and AVR  http://cq.cx/ladder.pl && https://github.com/LDmicro/LDmicro
+国人：https://blog.csdn.net/yunhaiC/article/details/74518176
+
+
+
+
+
+官网链接：
+http://www.plcedit.org/
+https://beremiz.org/index.html.en
+https://bitbucket.org/skvorl/beremiz/src/default/
+https://sourceforge.net/p/beremiz/beremiz/ci/default/tree/
+https://github.com/nucleron/beremiz
+http://soapboxautomation.com/
+https://www.openplcproject.com/plcopen-editor openplc
+https://github.com/thiagoralves/OpenPLC-Ladder-Editor
+https://github.com/thiagoralves/OpenPLC_v2
+https://github.com/starsight/RobotStudio
+https://github.com/starsight/iec-compiler
+
+
+
+
+
+
+
+
+
+
+
+
+

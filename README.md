@@ -9,6 +9,48 @@ dot -Tpng Chart.dot -o Chart.png
 
 
 
+
+# Introduction: Open source project recommendation: CNC+CRC/SoftPLC/OpenCASCADE/CAD/CAM
+
+
+### Note:
+
+```
+Respect the author and support originality. 
+If you need to reprint, please attach the original address:
+
+```
+
+
+
+
+# CRC/CNC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **QCAD**
 
 
@@ -80,6 +122,16 @@ https://dev.opencascade.org/release
 https://github.com/Open-Cascade-SAS/OCCT
 
 ```
+
+
+
+
+
+
+
+
+
+
 
 
 
