@@ -22,6 +22,25 @@ If you need to reprint, please attach the original address:
 ```
 
 
+CNC - Computer Numerical Control
+
+CRC - Cutter Radius Compensation
+
+CAD - Computer-Aided Design
+
+CAM - Computer-Aided Manufacturing
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # CRC/CNC
